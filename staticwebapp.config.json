@@ -1,0 +1,28 @@
+{
+    "routes": [
+      {
+        "route": "/"
+      }
+    ],
+    "navigationFallback": {
+      "rewrite": "/"
+    },
+    "responseOverrides": {
+      "400": {
+        "rewrite": "/"
+      },
+      "401": {
+        "redirect": "/",
+        "statusCode": 302
+      },
+      "403": {
+        "rewrite": "/"
+      },
+      "404": {
+        "rewrite": "/"
+      }
+    },
+    "mimeTypes": {
+      ".json": "text/json"
+    }
+  }
